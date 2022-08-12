@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1e14f9fceb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link href="src/styles.css" />
+</head>
+<body>
+    <div class="container">
+      <div class="row heading">
+        <div class="col search">
+        <form class="form-inline" id="search-form">
+            <div class="row">
+            <div class="form-group mb-2">
+        
+            </div>
+            <div class="form-group mx-sm-1 mb-2">
+              
+              <input type="text" id="search-input" class="form-control shadow-sm"
+               placeholder="Search for a city">
+            </div>
+            <br/>
+            <div class="row buttons">
+<div><button type="submit" class="btn btn-primary mb-2 shadow-sm btn-sm  search-form">Search</button></div>
+
+<div><button type="button" id="current-location-button" class="btn btn-outline-primary btn-sm current-time">Current</button></div>
+            
+          </div>
+        </div>
+        </div>
+        </form>
+      <div class="col">
+      <header>
+        <h1>
+          CURRENT WEATHER IN <span class="cityName"></span>
+        
+          <br>
+          <div id="current-date"><div/>
+          </h1>
+        
+
+        <p>
+         
+            <div>
+            
+              <span class="temperature" id="temperature"></span
+                ><span class="units">
+                  <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                  
+
+           
+          </div>
+          <span id="info"></span>
+          
+        
+        </p>
+      </div>
+      
+      </div>
+      </header>
+      <div class="row days">
+        <div class="col">
+          sun
+          <div>
+            <i class="fa-regular fa-sun icons"></i>
+            <div>
+              max 25°
+              <br />
+              min 10°
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          mon
+          <div>
+            <i class="fa-solid fa-cloud-sun icons"></i>
+            <div>
+              max 25°
+              <br />
+              min 10°
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          tue
+          <div>
+            <i class="fa-solid fa-cloud-bolt icons"></i>
+            <div>
+              max 25°
+              <br />
+              min 10°
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          wed
+          <div>
+            <i class="fa-solid fa-cloud-rain wed icons"></i>
+            <div>
+              max 25°
+              <br />
+              min 10°
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          thu
+          <div>
+            <i class="fa-solid fa-cloud icons"></i>
+            <div>
+              max 25°
+              <br />
+              min 10°
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          fri
+          <div>
+            <i class="fa-solid fa-cloud icons fri"></i>
+            <div>
+              max 25°
+              <br />
+              min 10°
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>

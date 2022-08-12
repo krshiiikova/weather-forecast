@@ -1,0 +1,57 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(70, 70, 70);
+}
+h1 {
+  font-weight: 400;
+  font-size: 18px;
+}
+.icons {
+  font-size: 28px;
+  color: rgb(77, 143, 230);
+}
+
+.temperature {
+  font-size: 30px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 3px solid lightblue;
+  border-radius: 15px;
+}
+header {
+  text-align: right;
+  padding: 0;
+  margin: 77px auto;
+}
+.col {
+  text-align: center;
+}
+.form-inline {
+  position: relative;
+  top: 75px;
+}
+.heading {
+  margin-bottom: -40px;
+}
+.units {
+  position: relative;
+  top: -20px;
+}
+.cityName {
+  font-weight: bold;
+}
+
+.search-form {
+  position: relative;
+  top: 4px;
+  left: 20px;
+}
+.current-time {
+  position: relative;
+  top: 4px;
+  left: 30px;
+}
