@@ -30,11 +30,14 @@ let newDate = document.querySelector("#current-date");
 newDate.innerHTML = `${day} ${date} ${month} ${hour}:${minute}`;
 
 function showWeather(response) {
+  console.log(response.data);
   let currentWeather = document.querySelector("#temperature");
   currentWeather.innerHTML = Math.round(response.data.main.temp);
   let info = document.querySelector("#info");
   info.innerHTML = response.data.weather[0].main;
   let cityName = document.querySelector(".cityName");
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = Math.round(response.data.wind.speed);
   cityName.innerHTML = response.data.name.toUpperCase();
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
