@@ -1,6 +1,7 @@
 body {
   font-family: "Quicksand", sans-serif;
   color: rgb(70, 70, 70);
+  background-color: beige;
 }
 h1 {
   font-weight: 400;
@@ -17,10 +18,12 @@ h1 {
 
 .container {
   max-width: 700px;
-  margin: 50px auto 20px;
+  margin: 100px auto 20px;
   padding: 30px;
   border: 5px solid lightblue;
   border-radius: 15px;
+  box-shadow: 6px 5px 5px rgba(79, 77, 77, 0.108);
+  background-color: white;
 }
 header {
   text-align: right;
@@ -58,4 +61,13 @@ header {
 .bottom {
   text-align: center;
   font-size: 15px;
+}
+
+.units .active {
+  color: black;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
 }
