@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forecast</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link
@@ -25,140 +25,92 @@
     />
 
     <link href="style.css" rel="stylesheet" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
       <div class="row heading">
         <div class="col search">
-        <form class="form-inline" id="search-form">
+          <form class="form-inline" id="search-form">
             <div class="row">
-            <div class="form-group mb-2">
-        
-            </div>
-            <div class="form-group mx-sm-1 mb-2">
-              
-              <input type="text" id="search-input" class="form-control shadow-sm"
-               placeholder="Search for a city">
-            </div>
-            <br/>
-            <div class="row buttons">
-<div><button type="submit" class="btn btn-primary mb-2 btn-sm shadow-sm   search-form">Search</button></div>
+              <div class="form-group mb-2"></div>
+              <div class="form-group mx-sm-1 mb-2">
+                <input
+                  type="text"
+                  id="search-input"
+                  class="form-control shadow-sm"
+                  placeholder="Search for a city"
+                />
+              </div>
+              <br />
+              <div class="row buttons">
+                <div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary mb-2 btn-sm shadow-sm search-form"
+                  >
+                    Search
+                  </button>
+                </div>
 
-<div><button type="button" id="current-location-button" class="btn btn-outline-primary btn-sm current-time">Current</button></div>
-            
-          </div>
+                <div>
+                  <button
+                    type="button"
+                    id="current-location-button"
+                    class="btn btn-outline-primary btn-sm current-time"
+                  >
+                    Current
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
-        </div>
-        </form>
-      <div class="col">
-      <header>
-        <h1>
-          CURRENT WEATHER IN <span class="cityName"></span>
-        
-          <br>
-          <div id="current-date"><div/>
-          </h1>
-        
 
-        <p>
-         
+        <div class="col">
+          <header>
+            <h1>
+              CURRENT WEATHER IN <span class="cityName"></span>
+
+              <br />
+              <div id="current-date"></div>
+            </h1>
+
             <div>
-              <img src="" id="icon" alt="">
-            
-              <span class="temperature" id="temperature"></span
-                ><span class="units">
+              <div>
+                <img src="" id="icon" alt="" />
+                <span class="temperature" id="temperature"></span>
+                <span class="units">
                   <a href="#" class="active" id="celsius-link">°C</a> |
                   <a href="#" id="fahrenheit-link">°F</a>
-                  
-
-           
-          </div>
-          <span id="info"></span>
-          <div>Wind speed: <span id="wind"></span> m/s</div>
-          
-        
-        </p>
-      </div>
-      
-      </div>
-      </header>
-      <div class="row days">
-        <div class="col">
-          sun
-          <div>
-            <i class="fa-regular fa-sun icons"></i>
-            <div>
-              max 25°
-              <br />
-              min 10°
+                </span>
+              </div>
+              <span id="info"></span>
+              <div>Wind speed: <span id="wind"></span> m/s</div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          mon
-          <div>
-            <i class="fa-solid fa-cloud-sun icons"></i>
-            <div>
-              max 25°
-              <br />
-              min 10°
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          tue
-          <div>
-            <i class="fa-solid fa-cloud-bolt icons"></i>
-            <div>
-              max 25°
-              <br />
-              min 10°
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          wed
-          <div>
-            <i class="fa-solid fa-cloud-rain wed icons"></i>
-            <div>
-              max 25°
-              <br />
-              min 10°
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          thu
-          <div>
-            <i class="fa-solid fa-cloud icons"></i>
-            <div>
-              max 25°
-              <br />
-              min 10°
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          fri
-          <div>
-            <i class="fa-solid fa-cloud icons fri"></i>
-            <div>
-              max 25°
-              <br />
-              min 10°
-            </div>
-          </div>
+          </header>
         </div>
       </div>
+      <div id="weather-forecast"></div>
     </div>
+
     <p class="bottom">
-      This project was coded by 
+      This project was coded by
       <em><a href="#">Olha Korshykova </a> </em>
-      and is 
-     <em><a href="https://github.com/krshiiikova/weather-forecast" target="_blank">open-sourced on GitHub</a> </em> 
-      and 
-      <em><a href="https://www.netlify.com/" target="_blank">hosted on Netlify</a> </em>
+      and is
+      <em
+        ><a
+          href="https://github.com/krshiiikova/weather-forecast"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+      </em>
+      and
+      <em
+        ><a href="https://www.netlify.com/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </em>
     </p>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -10,6 +10,7 @@ h1 {
 .icons {
   font-size: 28px;
   color: rgb(77, 143, 230);
+  text-align: center;
 }
 
 .temperature {
@@ -70,4 +71,14 @@ header {
 
 .units .active:hover {
   text-decoration: none;
+}
+.maximum {
+  font-weight: bold;
+}
+.minimum {
+  opacity: 0.7;
+}
+
+.degrees {
+  padding: 10px;
 }

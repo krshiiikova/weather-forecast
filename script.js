@@ -29,6 +29,33 @@ let date = now.getDate();
 let newDate = document.querySelector("#current-date");
 newDate.innerHTML = `${day} ${date} ${month} ${hour}:${minute}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let forecastHTML = `<div class="row">`;
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+            ${day}
+            <div>
+              <i class="fa-regular fa-sun icons"></i>
+              <div class="degrees">
+                <span class="maximum">25°</span>
+
+                <span class="minimum">10°</span>
+              </div>
+              </div>
+              </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showWeather(response) {
   console.log(response.data);
   let currentWeather = document.querySelector("#temperature");
@@ -103,3 +130,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Kyiv");
+displayForecast();
